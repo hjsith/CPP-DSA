@@ -18,5 +18,7 @@ namespace sort
             }
             data[i + 1] = value;
         }
+
+        return data;
     }
 }
