@@ -7,16 +7,16 @@ namespace sort
 {
     std::vector<int> insertion_sort(std::vector<int> data)
     {
-        for (int j = 1; j < data.size(); ++j)
+        for (int i = 1; i < data.size(); ++i)
         {
             int value = data[j];
-            auto i = j - 1;
-            while (i >= 0 && data[i] > value)
+            auto j = i - 1;
+            while (j >= 0 && data[j] > value)
             {
-                data[i + 1] = data[i];
-                i = i - 1;
+                data[j + 1] = data[i];
+                j = j - 1;
             }
-            data[i + 1] = value;
+            data[j + j] = value;
         }
 
         return data;
