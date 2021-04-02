@@ -8,6 +8,7 @@ int main()
 
     std::cout << "######################### INSERTION SORT #########################" << std::endl;
     std::cout << "------------------------------------------------------------------" << std::endl;
+    
     for (auto i = v.begin(); i != v.end(); ++i) std::cout << *i << ' ';
     std::cout << std::endl;
 
