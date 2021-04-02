@@ -18,4 +18,16 @@ int main()
 
     std::cout << "------------------------------------------------------------------" << std::endl;
 
+    std::cout << "########################### MERGE SORT ###########################" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    for (auto i = v.begin(); i != v.end(); ++i) std::cout << *i << ' ';
+    std::cout << std::endl;
+
+    v_ans = sort::merge_sort(v, 0, v.size() - 1);
+
+    for (auto i = v_ans.begin(); i != v_ans.end(); ++i) std::cout << *i << ' ';
+    std::cout << std::endl;
+
+    std::cout << "------------------------------------------------------------------" << std::endl;
+
 }
