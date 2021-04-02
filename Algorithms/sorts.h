@@ -21,4 +21,14 @@ namespace sort
 
         return data;
     }
+
+    std::vector<int> merge_sort(std::vector<int> data, int left, int right)
+    {
+        return {};
+    }
+
+    void merge(std::vector<int> data, int left, int middle, int right)
+    {
+
+    }
 }
