@@ -9,14 +9,14 @@ namespace sort
     {
         for (int i = 1; i < data.size(); ++i)
         {
-            int value = data[j];
+            int value = data[i];
             auto j = i - 1;
             while (j >= 0 && data[j] > value)
             {
-                data[j + 1] = data[i];
+                data[j + 1] = data[j];
                 j = j - 1;
             }
-            data[j + j] = value;
+            data[j + 1] = value;
         }
 
         return data;
